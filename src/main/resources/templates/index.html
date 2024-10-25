@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-xrD5XpQk8D5cyFtGA5uF6RjKK4Cu6Yd8YYfo5C6Mk7G2M7X2fuY6u3kEhNEahMfkgDEjSMDVvxK1x8qG5W+5Eg=="
+          crossorigin="anonymous" />
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container-fluid {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .manage-users-btn {
+            font-size: 1.5rem;
+            color: #fff;
+            background-color: #007bff; /* Primary blue color */
+            border: none;
+            padding: 15px 30px; /* Increased padding for a more prominent button */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Remove underlining */
+        }
+
+        .manage-users-btn:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+
+        .fa-users {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <h1>Welcome to my application</h1>
+    <button class="manage-users-btn" onclick="location.href='/users'">
+        <i class="fas fa-users"></i> Manage Users
+    </button>
+</div>
+</body>
+
+</html>
